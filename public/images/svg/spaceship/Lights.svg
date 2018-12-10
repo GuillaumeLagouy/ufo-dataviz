@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1970 1010.25">
+  <defs>
+    <linearGradient id="light-gradient" x1="1312.64" y1="945.37" x2="1312.64" y2="1004.2" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#eff9c8" stop-opacity="0"/>
+      <stop offset="0.1" stop-color="#ebf9c9" stop-opacity="0.02"/>
+      <stop offset="0.23" stop-color="#def9ca" stop-opacity="0.08"/>
+      <stop offset="0.36" stop-color="#c8facd" stop-opacity="0.17"/>
+      <stop offset="0.5" stop-color="#aafbd1" stop-opacity="0.3"/>
+      <stop offset="0.64" stop-color="#84fcd6" stop-opacity="0.47"/>
+      <stop offset="0.79" stop-color="#54fddb" stop-opacity="0.67"/>
+      <stop offset="0.94" stop-color="#1efee2" stop-opacity="0.91"/>
+      <stop offset="0.99" stop-color="#09ffe5"/>
+    </linearGradient>
+    <linearGradient id="light-gradient-2" x1="999.5" y1="49.2" x2="999.5" y2="977.08" xlink:href="#light-gradient"/>
+    <linearGradient id="light-gradient-3" x1="657.64" y1="947.37" x2="657.64" y2="1006.2" xlink:href="#light-gradient"/>
+    <linearGradient id="light-gradient-4" x1="973" y1="50.49" x2="973" y2="979.06" xlink:href="#light-gradient"/>
+  </defs>
+  <title>lights</title>
+  <g id="lights">
+    <g id="leftLight">
+      <ellipse cx="1312.64" cy="972.8" rx="78.16" ry="35.45" style="fill: url(#light-gradient)"/>
+      <path d="M1970,1.25,1379.72,954.6l-14,22.68s-7.35,17.64-53,17.64c-45.1,0-53-17.64-53-17.64l-24.21-9.93L698,746.94,29,472.55V0L698,.43Z" style="fill: url(#light-gradient-2)"/>
+    </g>
+    <g id="rightLight">
+      <ellipse cx="657.64" cy="974.8" rx="78.16" ry="35.45" style="fill: url(#light-gradient-3)"/>
+      <path d="M1946,6.89V479.74L1277,750.27l-205.2,83-29.36,11.88h0l-42.64,17.24-23.58,9.53L734.93,969.47l-24.25,9.81s-7.35,17.64-53,17.64c-45.1,0-53-17.64-53-17.64l-14-22.69L514.34,833.25l-13-21L62,101.54,0,1.25l345.22,1L1277,5Z" style="fill: url(#light-gradient-4)"/>
+    </g>
+  </g>
+</svg>

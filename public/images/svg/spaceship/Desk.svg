@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 960.9 368.19">
+  <defs>
+    <linearGradient id="linear-gradient" x1="480.45" y1="-20.56" x2="480.45" y2="203.95" gradientUnits="userSpaceOnUse">
+      <stop offset="0.01" stop-color="#acccd6"/>
+      <stop offset="0.08" stop-color="#a3c2ce"/>
+      <stop offset="0.33" stop-color="#84a1b4"/>
+      <stop offset="0.58" stop-color="#6f89a2"/>
+      <stop offset="0.8" stop-color="#627b97"/>
+      <stop offset="0.99" stop-color="#5d7693"/>
+    </linearGradient>
+  </defs>
+  <title>Desk</title>
+  <g>
+    <polygon id="bas_tableau" data-name="bas tableau" points="861.89 0 99.01 0 0 174.36 0 368.19 487.1 368.19 960.9 368.19 960.9 174.36 861.89 0" style="fill: #345466"/>
+    <polygon id="ombre_tableau" data-name="ombre tableau" points="960.9 326.54 960.9 174.36 861.89 0 99.01 0 0 174.36 0 321.9 960.9 326.54" style="fill: #b0b3b9;mix-blend-mode: multiply"/>
+    <polygon id="bord_tableau" data-name="bord tableau" points="861.89 0 99.01 0 0 174.36 487.1 174.36 960.9 174.36 861.89 0" style="fill: url(#linear-gradient)"/>
+    <polygon id="fond_tableau" data-name="fond tableau" points="27.83 158.16 108.44 16.2 852.46 16.2 933.08 158.16 27.83 158.16"/>
+  </g>
+</svg>

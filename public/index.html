@@ -6,7 +6,107 @@
     <link rel="stylesheet" href="build/app.css">
 </head>
 <body>
-    <h1>Sample Project</h1>
+
+<div id="fullpage">
+    <div id="dashboard" class="section">
+        <section id="dashboard_map" class="dashboard_section">
+            <div id="dashboard_map_container">
+                <div id="mapControllers_container">
+                    <h1 class="dashboard_section_title">Observations d'OVNI aux Etats-Unis</h1>
+                    <p class="dashboard_section_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div id="hover_info"></div>
+                    <div>
+                        <label for="airport">Afficher les aéroports</label>
+                        <input type="checkbox" id="airport">
+                    </div>
+                    <!--dropdown-->
+                    <div>
+                        <label for="year">Observations pendant l'année :</label>
+                        <select id="year">
+                            <option value="">1940</option>
+                            <option value="">1990</option>
+                            <option value="">2000</option>
+                            <option value="">2014</option>
+                        </select>
+                    </div>
+                    <!--player-->
+                    <div>
+                        <button>Play</button>
+                        <button>Pause</button>
+                    </div>
+                </div>
+                <div id="map_container"></div>
+            </div>
+        </section>
+        <section id="dashboard_barchart" class="dashboard_section">
+            <h1 class="dashboard_section_title">Nombre d'observation par an</h1>
+            <p class="dashboard_section_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet doloremque exercitationem id obcaecati optio tenetur vel.</p>
+            <div id="dashboard_barchart_container">
+                <div id="barchartControllers_container">
+                    <button>Ordre chronologique</button>
+                    <button>Ordre croissant</button>
+                    <button>Ordre décroissant</button>
+                </div>
+                <div id="barchart"></div>
+            </div>
+        </section>
+
+    </div>
+<!--    <div id="spaceship" class="section">
+        <div class="wrapper">
+            <img id="bottomUfo" src="images/svg/spaceship/Bottom.svg" alt="">
+            <img id="desk" src="images/svg/spaceship/Desk.svg" alt="">
+
+            <img id="lights" class="svg" src="images/svg/spaceship/Lights.svg" alt="">
+            <img id="screen" class="svg" src="images/svg/spaceship/Screen.svg" alt="">
+
+            <img id="leftChair" src="images/svg/spaceship/LeftChair.svg" alt="">
+            <img id="rightChair" src="images/svg/spaceship/RightChair.svg" alt="">
+
+            <img id="switches" class="svg" src="images/svg/spaceship/Switches.svg" alt="">
+            &lt;!&ndash;<div id="BarChart"></div>&ndash;&gt;
+        </div>
+    </div>-->
+    <div id="title-page" class="section">
+        <img id="title-svg" src="./images/svg/title.svg" class="svg" alt="">
+    </div>
+    <div id="story-1-section" class="section">
+        <div class="story-wrapper">
+            <section class="section-story section-story_left"></section>
+            <section class="section-story section-story_right">
+               <div class="story-container">
+                   <div class="story-text">
+                        <p>Maecenas rutrum ligula sed mi vestibulum eleifend. Quisque commodo sed tellus et commodo. Morbi justo arcu, pharetra vitae maximus at, eleifend vel lacus. Etiam euismod, dui nec volutpat fringilla, nisi tortor porta tortor, a aliquam sem ex id eros. Morbi mattis sapien eu sapien congue pretium. Donec nisl turpis.</p>
+                   </div>
+               </div>
+            </section>
+        </div>
+    </div>
+    <div id="story-2-section" class="section">
+        <div class="story-wrapper">
+            <section class="section-story section-story_left">
+                <div class="story-container">
+                    <div class="story-text">
+                        <p>Maecenas rutrum ligula sed mi vestibulum eleifend. Quisque commodo sed tellus et commodo. Morbi justo arcu, pharetra vitae maximus at, eleifend vel lacus. Etiam euismod, dui nec volutpat fringilla, nisi tortor porta tortor, a aliquam sem ex id eros. Morbi mattis sapien eu sapien congue pretium. Donec nisl turpis.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="section-story section-story_right"></section>
+        </div>
+    </div>
+    <div id="story-3-section" class="section">
+        <div class="story-wrapper">
+            <section class="section-story section-story_left"></section>
+            <section class="section-story section-story_right">
+                <div class="story-container">
+                    <div class="story-text">
+                        <p>Maecenas rutrum ligula sed mi vestibulum eleifend. Quisque commodo sed tellus et commodo. Morbi justo arcu, pharetra vitae maximus at, eleifend vel lacus. Etiam euismod, dui nec volutpat fringilla, nisi tortor porta tortor, a aliquam sem ex id eros. Morbi mattis sapien eu sapien congue pretium. Donec nisl turpis.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
 
 <script src="build/runtime.js"></script>
 <script src="build/app.js"></script>

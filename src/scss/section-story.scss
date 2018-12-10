@@ -1,0 +1,50 @@
+.story-wrapper{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.section-story{
+  width: 50%;
+  height: 100%;
+  font-family: 'Monospace', sans-serif;
+  color: white;
+}
+
+#story-1-section .section-story_left{
+  background: url("../../public/images/svg/space.svg") no-repeat;
+  background-size: cover;
+}
+#story-1-section .section-story_right,
+#story-3-section .section-story_right{
+  background-color: black;
+}
+
+#story-2-section .section-story_right{
+  background: url("../../public/images/svg/observation.svg") no-repeat;
+  background-size: cover;
+}
+#story-2-section .section-story_left{
+  background-color: black;
+}
+
+#story-3-section .section-story_left{
+  background: url("../../public/images/png/spaceship.png") no-repeat;
+  background-size: cover;
+}
+
+.story-container{
+  width: 80%; height: 80vh;
+  margin-top: 50vh;
+  margin-left: auto; margin-right: auto;
+  transform: translateY(-50%);
+  background-image: url("../../public/images/png/screen_story.png");
+  background-size: cover;
+
+  .story-text{
+    width: 70%;
+    padding-top: 100px;
+    margin-left: auto; margin-right: auto;
+    font-family: 'Monospace', sans-serif;
+  }
+}
