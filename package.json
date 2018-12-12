@@ -9,7 +9,7 @@
     "encore.prod": "encore production",
     "encore.watch": "encore dev --watch"
   },
-  "author": "Hugo Duval",
+  "author": "Guillaume Lagouy",
   "devDependencies": {
     "@symfony/webpack-encore": "^0.22.1",
     "inline-svg": "^2.2.3",
