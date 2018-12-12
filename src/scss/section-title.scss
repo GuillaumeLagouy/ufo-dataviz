@@ -4,6 +4,17 @@
   margin-top: 50vh;
 }
 
+#title-svg g#title {
+  path{
+    stroke: #00FFF5 !important;
+  }
+  rect{
+    stroke: #00FFF5 !important;
+  }
+}
+
+
+
 #title-page{
-  background-color: black;
+  background-color: #00042D;
 }

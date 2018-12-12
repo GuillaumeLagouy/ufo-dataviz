@@ -1,0 +1,24 @@
+<svg id="byOrder" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20">
+  <defs>
+    <linearGradient id="Dégradé_sans_nom_11" data-name="Dégradé sans nom 11" x1="3.22" y1="8.57" x2="3.22" y2="16.57" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffd886"/>
+      <stop offset="1" stop-color="#ed173d"/>
+    </linearGradient>
+    <linearGradient id="Dégradé_sans_nom_11-2" x1="10.5" y1="4.57" x2="10.5" y2="16.57" xlink:href="#Dégradé_sans_nom_11"/>
+    <linearGradient id="Dégradé_sans_nom_11-3" x1="17.78" y1="0.57" x2="17.78" y2="16.57" xlink:href="#Dégradé_sans_nom_11"/>
+    <linearGradient id="Dégradé_sans_nom_11-4" x1="6.86" y1="6.57" x2="6.86" y2="16.57" xlink:href="#Dégradé_sans_nom_11"/>
+    <linearGradient id="Dégradé_sans_nom_11-5" x1="14.14" y1="2.57" x2="14.14" y2="16.57" xlink:href="#Dégradé_sans_nom_11"/>
+    <linearGradient id="Dégradé_sans_nom_20" data-name="Dégradé sans nom 20" x1="18.31" y1="18" x2="1.92" y2="18" gradientUnits="userSpaceOnUse">
+      <stop offset="0.15" stop-color="#ffd886"/>
+      <stop offset="1" stop-color="#ed173d"/>
+    </linearGradient>
+  </defs>
+  <title>order</title>
+  <rect x="1.87" y="8.57" width="2.7" height="8" rx="1" ry="1" style="fill: url(#Dégradé_sans_nom_11)"/>
+  <rect x="9.15" y="4.57" width="2.7" height="12" rx="1" ry="1" style="fill: url(#Dégradé_sans_nom_11-2)"/>
+  <rect x="16.43" y="0.57" width="2.7" height="16" rx="1" ry="1" style="fill: url(#Dégradé_sans_nom_11-3)"/>
+  <rect x="5.51" y="6.57" width="2.7" height="10" rx="1" ry="1" style="fill: url(#Dégradé_sans_nom_11-4)"/>
+  <rect x="12.79" y="2.57" width="2.7" height="14" rx="1" ry="1" style="fill: url(#Dégradé_sans_nom_11-5)"/>
+  <line x1="2.42" y1="18" x2="17.81" y2="18" style="fill: none;stroke-linecap: round;stroke-miterlimit: 10;stroke: url(#Dégradé_sans_nom_20)"/>
+  <polygon points="18.59 18 18.07 18.25 17.55 18.5 17.55 18 17.55 17.5 18.07 17.75 18.59 18" style="fill: #ffd886;stroke: #ffd886;stroke-linecap: round;stroke-linejoin: round"/>
+</svg>

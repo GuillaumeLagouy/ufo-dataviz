@@ -1,20 +1,172 @@
 #dashboard{
-  background-color: #0C1733;
-  padding: 10px;
+  background-color: #00000D;
+  padding: 5px;
   color: white;
 }
 
-.dashboard_section{
-  padding: 10px;
-  border-radius: 5px;
+#map_container{
+  height: 57%;
+  overflow: hidden;
+  #usaMap{
+    width: 100%;
+    height: 100%;
+    transform: scale(1.4);
+  }
+}
+
+.spaceship-bottom{
+  display: flex;
+}
+
+.section-spaceship{
+  background-color: #191F52;
   margin: 10px;
-  background-color: #1B2945;
+  border: #044886 solid;
+  border-width: 2px 2px 0 0;
+}
+
+#map{
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+#barchart{
+  width: 45%;
+}
+
+#map_header{
+  border: solid 2px #044886;
+  align-self: center;
+  text-align: center;
+  padding: 10px 40px;
+  margin-bottom: 10px;
+
+  h1{
+    font-family: "Air Americana", sans-serif;
+    font-size: 30px;
+  }
+  h2{
+    font-family: "Futurist", sans-serif;
+    font-size: 14px;
+  }
+}
+
+#map_obsinfo{
+  display: none;
+}
+
+#map_obsinfo_firstline{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.obsinfo{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+}
+
+.obsinfo_title{
+  font-size: 10px;
+  margin-bottom: 2px;
+  letter-spacing: 2px;
+  font-family: "Futurist", sans-serif;
+}
+
+.obsinfo_content{
+  border: solid 1px white;
+  width: 100%;
+  height: 25px;
+  padding: 5px;
+
+  font-size: 15px;
+  font-family: "Futura", sans-serif;
+}
+
+#map_commentary{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#map_commentary .obsinfo_content{
+  height: 45px;
+  padding: 7px;
+}
+
+#obs_city .obsinfo_content{
+  text-transform: capitalize;
+}
+
+#map_controllers{
+  display: flex;
+}
+
+#plane{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+#plane-picto{
+  background-image: url("../../public/images/svg/airplane-shape.svg");
+  background-size: cover;
+  width: 40px; height: 40px;
+}
+
+#plane-activate{
+  width: 30px; height: 30px;
+  border:solid 3px white;
+  margin-left: 10px;
+  align-self: center;
+}
+
+#slider-container{
+  display: flex;
+  margin-left: 30px;
+}
+
+#slider-container input{
+  width: 500px;
+}
+
+#slider_date{
+  align-self: center;
+  font-family: "Air Americana", sans-serif;
+  font-size: 30px;
+  padding-left: 10px;
+}
+
+#nbObs-container{
+  padding: 10px;
+  font-family: "Air Americana", sans-serif;
+  font-size: 20px;
+}
+
+#nbObs{
+  font-size: 40px;
+}
+
+
+/*.dashboard_section{
+  margin: 20px;
+}
+
+.dashboard_section_title{
+  font-family: "Futura", sans-serif;
+  font-size: 18px;
+  padding-bottom: 5px;
 }
 
 .dashboard_section_desc{
-  margin-bottom: 15px;
+  font-family: "Futura", sans-serif;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.5);
 }
-
 
 #dashboard_map{
   #dashboard_map_container{
@@ -24,31 +176,72 @@
       width: 40%;
       display: flex;
       flex-direction: column;
+      background-color: #1B2945;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      padding: 15px;
       #hover_info{
-        width: 100%;
-        height: 200px;
-      }
-    }
-    #map_container{
-      width: 60%;
-      height: 400px;
-      #usaMap{
-        width: 100%;
+        height: 100px;
         background-color: black;
       }
     }
+
   }
 }
 #dashboard_barchart{
+  background-color: #1B2945;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   #dashboard_barchart_container{
     display: flex;
+    height: 100%;
     #barchart{
-      width: 100%;
-      height: 200px;
+      width: 80%;
+      padding: 5px;
     }
     #barchartControllers_container{
-      display: flex;
-      flex-direction: column;
+      .btnBarchart{
+        width: 50%;
+        border-radius: 50px;
+        background-color: transparent;
+        border: #2c374e solid 1px;
+        padding: 10px 20px;
+        font-family: "Futura", sans-serif;
+        color: rgba(255, 255, 255, 0.7);
+        margin: 10px;
+        font-size: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        cursor: pointer;
+        user-select: none;
+      }
+      .btnBarchart:hover{
+        transition: 0.2s;
+        transform: translateY(2px)scale(0.95);
+      }
+      .btnBarchart:focus{
+        outline: none;
+      }
+    }
+    .bb-axis{
+      fill: rgba(255,255,255, 0.3);
+    }
+
+    .bb-event-rect{
+    }
+
+    .bb-tooltip-container{
+      background-color: rgba(0,0,0, 0.4);
+      padding: 4px;
+      font-family: "Futura", sans-serif;
     }
   }
 }
+
+#barchart-control-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}*/

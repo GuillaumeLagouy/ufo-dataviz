@@ -9,64 +9,103 @@
 
 <div id="fullpage">
     <div id="dashboard" class="section">
-        <section id="dashboard_map" class="dashboard_section">
+        <div id="map_container"></div>
+        <div class="spaceship-bottom">
+            <section id="map" class="section-spaceship">
+                <div id="map_header">
+                    <h1>OBSERVATIONS DES OVNIS</h1>
+                    <h2>AUX ETATS-UNIS</h2>
+                </div>
+                <div id="map_obsinfo">
+                    <div id="map_obsinfo_firstline">
+                        <div class="obsinfo" id="obs_date">
+                            <h3 class="obsinfo_title">DATE</h3>
+                            <span class="obsinfo_content"> </span>
+                        </div>
+
+                        <div class="obsinfo" id="obs_duration">
+                            <h3 class="obsinfo_title">DURATION</h3>
+                            <span class="obsinfo_content"></span>
+                        </div>
+
+                        <div class="obsinfo" id="obs_city">
+                            <h3 class="obsinfo_title">VILLE</h3>
+                            <span class="obsinfo_content"></span>
+                        </div>
+                    </div>
+                    <div id="map_commentary">
+                        <h3 class="obsinfo_title">COMMENTAIRE</h3>
+                        <span class="obsinfo_content"></span>
+                    </div>
+                </div>
+
+                <div id="map_stateinfo">
+                    <div class="obsinfo" id="state">
+                        <h3 class="obsinfo_title">ETAT</h3>
+                        <span class="obsinfo_content"></span>
+                    </div>
+                    <div id="nbObs-container">
+                        <span id="nbObs">....</span>
+                        <span>OBSERVATIONS</span>
+                    </div>
+                </div>
+
+                <div id="map_controllers">
+                    <div id="plane">
+                        <div id="plane-picto"></div>
+                        <div id="plane-activate"></div>
+                    </div>
+                    <div id="slider-container">
+                        <input type="range" min="1910" max="2014" value="1910" id="slider">
+                        <span id="slider_date">. . . .</span>
+                    </div>
+                </div>
+            </section>
+            <section id="barchart" class="section-spaceship"></section>
+        </div>
+
+
+        <!--<section id="dashboard_map" class="dashboard_section">
+            <button id="about">A propos</button>
+            <div id="about-section"></div>
+
             <div id="dashboard_map_container">
                 <div id="mapControllers_container">
-                    <h1 class="dashboard_section_title">Observations d'OVNI aux Etats-Unis</h1>
-                    <p class="dashboard_section_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="dashboard_section_header">
+                        <h1 class="dashboard_section_title">Observations d'OVNI aux Etats-Unis</h1>
+                        <p class="dashboard_section_desc">Survol les points sur la carte pour obtenir des informations supplémentaires</p>
+                    </div>
                     <div id="hover_info"></div>
                     <div>
                         <label for="airport">Afficher les aéroports</label>
                         <input type="checkbox" id="airport">
                     </div>
-                    <!--dropdown-->
-                    <div>
+                    <div id="dropdown">
                         <label for="year">Observations pendant l'année :</label>
-                        <select id="year">
-                            <option value="">1940</option>
-                            <option value="">1990</option>
-                            <option value="">2000</option>
-                            <option value="">2014</option>
-                        </select>
-                    </div>
-                    <!--player-->
-                    <div>
-                        <button>Play</button>
-                        <button>Pause</button>
+                        <input type="range" step="1" min="1910" max="2014" value="1910" class="slider" id="year">
+                        <span id="sliderValue"></span>
                     </div>
                 </div>
                 <div id="map_container"></div>
             </div>
         </section>
         <section id="dashboard_barchart" class="dashboard_section">
-            <h1 class="dashboard_section_title">Nombre d'observation par an</h1>
-            <p class="dashboard_section_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet doloremque exercitationem id obcaecati optio tenetur vel.</p>
             <div id="dashboard_barchart_container">
                 <div id="barchartControllers_container">
-                    <button>Ordre chronologique</button>
-                    <button>Ordre croissant</button>
-                    <button>Ordre décroissant</button>
+                    <div class="dashboard_section_header">
+                        <h1 class="dashboard_section_title">Nombre d'observation par an</h1>
+                        <p class="dashboard_section_desc">Afin d'étudier le nombre d'observation par an, tu peux trier les données.</p>
+                    </div>
+                    <div id="barchart-control-container">
+                        <button id="btnChrono" class="btnBarchart">chronologique</button>
+                        <button id="btnIncreasing" class="btnBarchart">croissant</button>
+                        <button id="btnDescending" class="btnBarchart">décroissant</button>
+                    </div>
                 </div>
                 <div id="barchart"></div>
             </div>
-        </section>
-
+        </section>-->
     </div>
-<!--    <div id="spaceship" class="section">
-        <div class="wrapper">
-            <img id="bottomUfo" src="images/svg/spaceship/Bottom.svg" alt="">
-            <img id="desk" src="images/svg/spaceship/Desk.svg" alt="">
-
-            <img id="lights" class="svg" src="images/svg/spaceship/Lights.svg" alt="">
-            <img id="screen" class="svg" src="images/svg/spaceship/Screen.svg" alt="">
-
-            <img id="leftChair" src="images/svg/spaceship/LeftChair.svg" alt="">
-            <img id="rightChair" src="images/svg/spaceship/RightChair.svg" alt="">
-
-            <img id="switches" class="svg" src="images/svg/spaceship/Switches.svg" alt="">
-            &lt;!&ndash;<div id="BarChart"></div>&ndash;&gt;
-        </div>
-    </div>-->
     <div id="title-page" class="section">
         <img id="title-svg" src="./images/svg/title.svg" class="svg" alt="">
     </div>

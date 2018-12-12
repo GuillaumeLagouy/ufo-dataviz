@@ -12,9 +12,15 @@ function loadData(){
                 d.day = date.getUTCDate();
                 d.month = date.getUTCMonth() + 1;
             });
-            console.log("load");
-            EventManager.dispatchEvent(new CustomEvent("UFO::DataReady", {detail: data}))
-        })
+            console.log("ufo loaded");
+            EventManager.dispatchEvent(new CustomEvent("UFO::UfoDataReady", {detail: data}))
+        });
+
+    d3.csv("./data/clean_airport.csv")
+        .then(data =>{
+            console.log("airport loaded");
+            EventManager.dispatchEvent(new CustomEvent("UFO::AirportDataReady", {detail: data}))
+        });
 }
 
 export {loadData};

@@ -1,18 +1,19 @@
 import * as d3 from "d3";
 import Observations from "./Observations"
 import {EventManager} from "./tools/EventManager";
+import {Airport} from "./Airport";
 
-const projection = d3.geoMercator().scale(550).translate([1400, 600]);
+const projection = d3.geoMercator().scale(550).translate([1650, 620]);
 const path = d3.geoPath().projection(projection);
 const canvas = d3.select("#map_container").append("svg")
-    .attr("width", 720)
+    .attr("width", 750)
     .attr("height", 400)
     .attr("id", "usaMap");
 
 canvas.append("rect")
     .attr("class", "background")
-    .attr("width", 720)
-    .attr("height", 400)
+    .attr("width", 1000)
+    .attr("height", 800)
     .attr("fill", "transparent")
     .attr("cursor", "pointer")
     .on("click", zoomed);
@@ -36,12 +37,22 @@ function displayMap() {
                     return stateF;
                 })
                 .attr("cursor", "pointer")
-                .attr("fill", "rgba(110, 190, 163, 0.5)")
-                .attr("stroke", "#6EBEA3")
+                .attr("fill", "transparent")
+                .attr("stroke", "#00FFF5")
                 .attr("stroke-width", 1.5)
-                .on('click', zoomed);
+                .attr("stroke-opacity", 0.5)
+                .on('click', zoomed)
+                .on("mouseover", function(){
+                    d3.select(this)
+                        .attr("fill", "rgba(172,171,255, 0.3)");
+                })
+                .on("mouseout", function(){
+                    d3.select(this)
+                        .attr("fill", "transparent");
+                });
 
             Observations.init();
+            Airport.init()
         })
 }
 export {displayMap};

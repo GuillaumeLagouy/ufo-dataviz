@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20.11 20.11">
+  <defs>
+    <linearGradient id="Dégradé_sans_nom_11" data-name="Dégradé sans nom 11" x1="10.11" y1="2" x2="10.11" y2="19" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffd886"/>
+      <stop offset="1" stop-color="#ed173d"/>
+    </linearGradient>
+    <linearGradient id="Dégradé_sans_nom_11-2" x1="8.28" y1="4.87" x2="8.28" y2="15.08" xlink:href="#Dégradé_sans_nom_11"/>
+    <linearGradient id="Dégradé_sans_nom_11-3" x1="13.2" y1="5.61" x2="13.2" y2="15.86" xlink:href="#Dégradé_sans_nom_11"/>
+  </defs>
+  <title>chrono</title>
+  <g id="byYear">
+    <circle cx="10.11" cy="10.5" r="7.5" style="fill: none;stroke-miterlimit: 10;stroke-width: 2px;stroke: url(#Dégradé_sans_nom_11)"/>
+    <polyline points="6.46 14.08 10.11 10.5 10.11 5.87" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px;stroke: url(#Dégradé_sans_nom_11-2)"/>
+    <path d="M11.29,15.36a5,5,0,0,0,1.22-9.25" style="fill: none;stroke-linecap: round;stroke-miterlimit: 10;stroke: url(#Dégradé_sans_nom_11-3)"/>
+    <polygon points="10.66 15.32 11.06 14.76 11.34 15.38 11.62 16.01 10.94 15.94 10.26 15.87 10.66 15.32" style="fill: none;stroke: #ed173d;stroke-linecap: round;stroke-linejoin: round"/>
+  </g>
+</svg>

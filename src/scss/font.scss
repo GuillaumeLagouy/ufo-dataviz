@@ -5,3 +5,26 @@
   font-weight: bold;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Futura';
+  src: url('../font/subset-FuturaStd-Medium.woff2') format('woff2'),
+  url('../font/subset-FuturaStd-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Air Americana';
+  src: url('../font/subset-AirAmericana.woff2') format('woff2'),
+  url('../font/subset-AirAmericana.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futurist';
+  src: url('../font/subset-FuturistFixedWidthRegular.woff2') format('woff2'),
+  url('../font/subset-FuturistFixedWidthRegular.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
