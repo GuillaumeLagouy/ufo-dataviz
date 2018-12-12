@@ -43,6 +43,11 @@ const Barchart = {
                 width: {ratio: 0.5}
             },
             axis: {
+                y:{
+                    tick: {
+                        values: [1000, 2000, 3000, 4000, 5000]
+                    }
+                },
                 x: {type: "category",
                     categories: x,
                     tick: {
@@ -56,8 +61,7 @@ const Barchart = {
             },
             bindto: "#barchart",
             color: {
-                pattern: ["#ACABFF", "#bf00ff"],
-
+                pattern: ["#0183F8"],
             }
         });
     },

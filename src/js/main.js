@@ -13,5 +13,14 @@ Barchart.init();
 MapControllers.init();
 
 const btnAbout = document.getElementById("about");
+btnAbout.addEventListener("click", ()=>{
+    if (btnAbout.classList.contains("active")){
+        document.getElementById("about-section").style.display = "none";
+        btnAbout.classList.remove("active")
+    } else {
+        document.getElementById("about-section").style.display = "inline";
+        btnAbout.classList.add("active")
+    }
+});
 
 

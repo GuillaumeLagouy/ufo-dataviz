@@ -8,7 +8,75 @@
 <body>
 
 <div id="fullpage">
+
+    <div id="title-page" class="section">
+        <img id="title-svg" src="./images/svg/title.svg" class="svg" alt="">
+    </div>
+    <div id="story-1-section" class="section">
+        <div class="story-wrapper">
+            <section class="section-story section-story_left"></section>
+            <section class="section-story section-story_right">
+               <div class="story-container">
+                   <div class="story-text">
+                        <p>
+                            Depuis plusieurs dizaines d’années, les Américains entretiennent une forte culture des objets non identifiés.<br>
+                            <br>
+                            De nombreux témoignages révèlent l'existence d’étranges apparitions survenues dans le ciel.<br>
+                            <br>
+                            Au fil des années ces déclarations augmentent et sont de plus en plus détaillées.<br>
+                            <br>
+                            Elles alimentent un débat autour de l’éventuelle existence des ovnis.<br>
+                        </p>
+                   </div>
+               </div>
+            </section>
+        </div>
+    </div>
+    <div id="story-2-section" class="section">
+        <div class="story-wrapper">
+            <section class="section-story section-story_left">
+                <div class="story-container">
+                    <div class="story-text">
+                        <p>
+                            Grâce à une base de données américaine, visualisez l’ensemble des témoignages d’observations d’ovnis entre 1910 et 2014.<br>
+                            <br>
+                            Les auteurs de ces déclarations justifient leur propos grâce aux différents détails relevés.<br>
+                            <br>
+                            Construisez votre opinion en contrôlant ces données à travers des graphiques interactifs et évolutifs.<br>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="section-story section-story_right"></section>
+        </div>
+    </div>
+    <div id="story-3-section" class="section">
+        <div class="story-wrapper">
+            <section class="section-story section-story_left"></section>
+            <section class="section-story section-story_right">
+                <div class="story-container">
+                    <div class="story-text">
+                        <p>
+                            Filtrez ces informations grâce à une représentation des zones susceptibles de créer de la confusion, telles que les aéroports américains.<br>
+                            <br>
+                            Observer la localisation de ces zones ainsi que celle d’où des apparitions d’ovnis ont été recensées.<br>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
     <div id="dashboard" class="section">
+
+        <button id="about">A PROPOS</button>
+
+        <div id="about-section">
+            <p>source : <a href="https://www.kaggle.com/NUFORC/ufo-sightings">Base de donnée d'observation d'OVNI</a><br><br>
+                "Travaux d'étudiant"</p>
+            <div class="logo" id="logo-cci"></div>
+            <div class="logo" id="logo-gobelins"></div>
+        </div>
+
         <div id="map_container"></div>
         <div class="spaceship-bottom">
             <section id="map" class="section-spaceship">
@@ -61,86 +129,15 @@
                     </div>
                 </div>
             </section>
-            <section id="barchart" class="section-spaceship"></section>
-        </div>
 
-
-        <!--<section id="dashboard_map" class="dashboard_section">
-            <button id="about">A propos</button>
-            <div id="about-section"></div>
-
-            <div id="dashboard_map_container">
-                <div id="mapControllers_container">
-                    <div class="dashboard_section_header">
-                        <h1 class="dashboard_section_title">Observations d'OVNI aux Etats-Unis</h1>
-                        <p class="dashboard_section_desc">Survol les points sur la carte pour obtenir des informations supplémentaires</p>
-                    </div>
-                    <div id="hover_info"></div>
-                    <div>
-                        <label for="airport">Afficher les aéroports</label>
-                        <input type="checkbox" id="airport">
-                    </div>
-                    <div id="dropdown">
-                        <label for="year">Observations pendant l'année :</label>
-                        <input type="range" step="1" min="1910" max="2014" value="1910" class="slider" id="year">
-                        <span id="sliderValue"></span>
-                    </div>
-                </div>
-                <div id="map_container"></div>
-            </div>
-        </section>
-        <section id="dashboard_barchart" class="dashboard_section">
-            <div id="dashboard_barchart_container">
-                <div id="barchartControllers_container">
-                    <div class="dashboard_section_header">
-                        <h1 class="dashboard_section_title">Nombre d'observation par an</h1>
-                        <p class="dashboard_section_desc">Afin d'étudier le nombre d'observation par an, tu peux trier les données.</p>
-                    </div>
-                    <div id="barchart-control-container">
-                        <button id="btnChrono" class="btnBarchart">chronologique</button>
-                        <button id="btnIncreasing" class="btnBarchart">croissant</button>
-                        <button id="btnDescending" class="btnBarchart">décroissant</button>
-                    </div>
+            <section id="barchart-container" class="section-spaceship">
+                <div id="barchart_header" class="section-header">
+                    <h1>NOMBRE D'OBSERVATION <span>PAR AN</span></h1>
                 </div>
                 <div id="barchart"></div>
-            </div>
-        </section>-->
-    </div>
-    <div id="title-page" class="section">
-        <img id="title-svg" src="./images/svg/title.svg" class="svg" alt="">
-    </div>
-    <div id="story-1-section" class="section">
-        <div class="story-wrapper">
-            <section class="section-story section-story_left"></section>
-            <section class="section-story section-story_right">
-               <div class="story-container">
-                   <div class="story-text">
-                        <p>Maecenas rutrum ligula sed mi vestibulum eleifend. Quisque commodo sed tellus et commodo. Morbi justo arcu, pharetra vitae maximus at, eleifend vel lacus. Etiam euismod, dui nec volutpat fringilla, nisi tortor porta tortor, a aliquam sem ex id eros. Morbi mattis sapien eu sapien congue pretium. Donec nisl turpis.</p>
-                   </div>
-               </div>
-            </section>
-        </div>
-    </div>
-    <div id="story-2-section" class="section">
-        <div class="story-wrapper">
-            <section class="section-story section-story_left">
-                <div class="story-container">
-                    <div class="story-text">
-                        <p>Maecenas rutrum ligula sed mi vestibulum eleifend. Quisque commodo sed tellus et commodo. Morbi justo arcu, pharetra vitae maximus at, eleifend vel lacus. Etiam euismod, dui nec volutpat fringilla, nisi tortor porta tortor, a aliquam sem ex id eros. Morbi mattis sapien eu sapien congue pretium. Donec nisl turpis.</p>
-                    </div>
-                </div>
-            </section>
-            <section class="section-story section-story_right"></section>
-        </div>
-    </div>
-    <div id="story-3-section" class="section">
-        <div class="story-wrapper">
-            <section class="section-story section-story_left"></section>
-            <section class="section-story section-story_right">
-                <div class="story-container">
-                    <div class="story-text">
-                        <p>Maecenas rutrum ligula sed mi vestibulum eleifend. Quisque commodo sed tellus et commodo. Morbi justo arcu, pharetra vitae maximus at, eleifend vel lacus. Etiam euismod, dui nec volutpat fringilla, nisi tortor porta tortor, a aliquam sem ex id eros. Morbi mattis sapien eu sapien congue pretium. Donec nisl turpis.</p>
-                    </div>
+                <div id="barchart-controllers">
+                    <button class="btnBarchart" id="btnChrono">CHRONOLIQUE</button>
+                    <button class="btnBarchart" id="btnIncreasing">CROISSANT</button>
                 </div>
             </section>
         </div>
