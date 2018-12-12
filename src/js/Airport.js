@@ -21,7 +21,8 @@ const Airport = {
 
         observations.append("circle")
             .attr("r", 0)
-            .attr("fill", "green");
+            .attr("fill", "#F98F23")
+            .attr("opacity", 0.8);
 
         EventManager.addEventListener("UFO::Zoom", () => {})
     }

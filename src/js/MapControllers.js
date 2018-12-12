@@ -9,9 +9,16 @@ const MapControllers = {
     init(){
         EventManager.addEventListener("UFO::HoverStateObs", (data) => {this.displayInfoState(data)});
         EventManager.addEventListener("UFO::HoverObs", (data) => {this.displayInfoObs(data)});
-        this.airport.addEventListener("click", () => this.displayAirport());
+        this.airport.addEventListener("click", () =>{
+
+            if(this.airport.classList.contains("check")){
+                this.airport.classList.remove("check")
+            } else {
+                this.airport.classList.add("check");
+            }
+            this.displayAirport()
+        });
         this.displayByYear();
-        //this.animation();
     },
 
     displayInfoState(data){
@@ -54,19 +61,5 @@ const MapControllers = {
             EventManager.dispatchEvent(new CustomEvent("UFO::YearChange", {detail: slider.value}));
         })
     },
-
-    /*animation(){
-        const play = document.querySelector("#play");
-        play.addEventListener("click", ()=>{
-            const slider = document.querySelector("#year");
-            let i = 1910;
-            setInterval(() => {
-                slider.value = i;
-                console.log(i);
-                i++;
-            }, 3000)
-        })
-    }*/
-
 };
 export default MapControllers;

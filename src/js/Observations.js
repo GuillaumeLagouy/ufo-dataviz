@@ -3,6 +3,7 @@ import {EventManager} from "./tools/EventManager";
 import {dictonaryState} from "./tools/listUsaStates";
 import {loadData} from "./loadData";
 import {Airport} from "./Airport";
+import MapControllers from "./MapControllers";
 
 const Observations = {
     init(){
@@ -94,7 +95,7 @@ const Observations = {
             });
         }
 
-        document.querySelector("#map_stateinfo").style.display = "inline";
+        document.querySelector("#map_stateinfo").style.display = "flex";
         document.querySelector("#map_obsinfo").style.display = "none";
         document.querySelector("#map_controllers").style.display = "flex";
     },
@@ -145,11 +146,15 @@ const Observations = {
         document.querySelector("#map_controllers").style.display = "none";
         document.querySelector("#map_obsinfo").style.display = "inline";
 
-
+        //this.deleteAirport();
     },
 
     deleteObs(){
         const obs = d3.selectAll(".observation").remove();
+    },
+
+    deleteAirport(){
+        d3.selectAll(".airport").remove();
     }
 };
 export default Observations;
